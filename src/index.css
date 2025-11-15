@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Share+Tech+Mono&family=VT323&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-vt323: "VT323", monospace; 
+  --font-pixelify: "Pixelify Sans", sans-serif; 
+  --font-sharetech: "Share Tech Mono", monospace; 
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-flow {
+  animation: flow 1s linear infinite;
+}
