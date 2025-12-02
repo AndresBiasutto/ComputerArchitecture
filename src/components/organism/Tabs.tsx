@@ -11,13 +11,17 @@ const Tabs: React.FC<IDataProps> = ({ data, children, onEnviarMensaje }) => {
     onEnviarMensaje(activeTab)
   }, [activeTab, onEnviarMensaje])
   
+  const transformedTabs = data.map(tab => ({
+    title: tab.title ?? "",
+    content: tab.content ?? ""
+  }));
 
   return (
     <div className="w-full flex justify-center items-start ">
       <div className="text-center">
-        <MTopTabs active={activeTab} setActive={setActiveTab} tabs={data} />
+        <MTopTabs active={activeTab} setActive={setActiveTab} tabs={transformedTabs} />
         <MTabContent active={activeTab} tabs={data} children={children} />
-        <MTabNav active={activeTab} setActive={setActiveTab} tabs={data} />
+        <MTabNav active={activeTab} setActive={setActiveTab} tabs={transformedTabs} />
       </div>
     </div>
   );

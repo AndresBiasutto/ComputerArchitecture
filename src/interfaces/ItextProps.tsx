@@ -1,3 +1,3 @@
 export interface ItextProps{
-    text?: string;
+    text: string;
 }

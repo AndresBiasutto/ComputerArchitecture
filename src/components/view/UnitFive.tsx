@@ -211,7 +211,7 @@ const CpuData = [
 
   ];
   return (
-    <Main title="Unidad Central de procesamiento (CPU)" gridCols="2">
+    <Main title="Unidad Central de procesamiento (CPU)" gridCols="1">
       <Tabs data={CpuData}  onEnviarMensaje={recibirMensaje} />
         <div className=" h-full flex items-start justify-center p-10">
           {componentsByIndex[mensajeDelHijo] ?? null}

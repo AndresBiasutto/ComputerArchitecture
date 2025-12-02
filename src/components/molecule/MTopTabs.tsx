@@ -2,7 +2,7 @@ import type { ITab } from "../../interfaces/ITab";
 
 const MTopTabs: React.FC<ITab> = ({ active, setActive, tabs }) => {
   return (
-    <ul className="w-full flex justify-center items-center m-2">
+    <ul className="w-full flex flex-wrap justify-center items-center m-2">
       {tabs.map((tab, index) => (
         <li
           key={index}
@@ -13,7 +13,7 @@ const MTopTabs: React.FC<ITab> = ({ active, setActive, tabs }) => {
           }`}
           onClick={() => setActive(index)}
         >
-          {index + 1}
+          {index + 1} - {tab.title}
         </li>
       ))}
     </ul>

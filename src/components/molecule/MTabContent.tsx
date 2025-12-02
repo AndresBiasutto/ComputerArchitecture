@@ -7,14 +7,18 @@ const MTabContent: React.FC<ITabBody> = ({ active, tabs, children }) => {
       {tabs.map(
         (tab, index) =>
           active === index && (
-            <ASection title={tab.title} text={tab.content}>
+            <ASection title={tab.title ?? ""} text={tab.content ?? ""}>
               <ul className=" flex flex-col items-start justify-start p-2 list-disc list-inside font-sharetech font-extralight text-yellow-50">
-                {tab.list ? tab.list.map((list) => (
-                      <li className=" text-start mt-2" key={list.subTitle}>
-                       <span className="text-yellow-100 font-bold">{list.subTitle}</span>  {list.text}
-                      </li>
-                    ))
-                  : null}
+                {tab.list
+                  ?.filter((list) => list.subTitle && list.text) // Filtra elementos válidos
+                  .map((list) => (
+                    <li className=" text-start mt-2" key={list.subTitle}>
+                      <span className="text-yellow-100 font-bold">
+                        {list.subTitle}
+                      </span>{" "}
+                      {list.text}
+                    </li>
+                  ))}
               </ul>
               {children}
             </ASection>

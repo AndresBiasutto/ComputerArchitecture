@@ -172,15 +172,13 @@ const UnitOne = () => {
   return (
     <Main
       title="Descripción de los elementos de arquitectura básica"
-      gridCols="2"
+      gridCols="1"
     >
-      <Tabs data={HardwareData} onEnviarMensaje={recibirMensaje}></Tabs>
-      <div className=" h-full flex items-start justify-center p-10">
-        {componentsByIndex[mensajeDelHijo] ?? null}
-      </div>
-      {/* <div className=" h-full w-full flex items-start justify-center p-10 col-span-1 md:col-span-2">
-        <VonNewmmannModel key="cpu" />,
-      </div> */}
+      <Tabs data={HardwareData} onEnviarMensaje={recibirMensaje}>
+        <div className=" h-full flex items-start justify-center p-10">
+          {componentsByIndex[mensajeDelHijo] ?? null}
+        </div>
+      </Tabs>
     </Main>
   );
 };

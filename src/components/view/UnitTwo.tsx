@@ -110,6 +110,7 @@ const UnitTwo = () => {
       title: "Código EBCDIC",
       content:
         "Código alternativo al ASCII, principalmente usado en sistemas mainframe de IBM. Usa 8 bits desde su diseño original, proporcionando 256 combinaciones posibles. Menos común que ASCII en sistemas modernos.",
+      list: [],
     },
   ];
   const [mensajeDelHijo, setMensajeDelHijo] = useState(0);
