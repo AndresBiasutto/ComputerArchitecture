@@ -1,6 +1,6 @@
-import ASection from "../molecule/ASection";
+import ASection from "../molecule/MSection";
 import RamMemory from "../organism/RamMemory";
-import Main from "../template/Main";
+import Main from "../atom/Main";
 
 const Landing = () => {
   return (

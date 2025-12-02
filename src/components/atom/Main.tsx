@@ -1,5 +1,5 @@
 import type { IBox } from "../../interfaces/IBox";
-import AH2 from "../atom/AH2";
+import AH2 from "./AH2";
 
 const Main: React.FC<IBox> = ({ title, children, gridCols = "3" }) => {
   const gridClassMap: Record<string, string> = {
@@ -13,7 +13,7 @@ const Main: React.FC<IBox> = ({ title, children, gridCols = "3" }) => {
   // Si no existe el valor, por defecto usa 3 columnas
   const gridClass = gridClassMap[gridCols] || "md:grid-cols-3";
   return (
-    <main className={`w-full p-2 transition-all duration-300 bg-blue-950`}>
+    <main className={`w-full p-2 transition-all duration-300 bg-gray-950`}>
       {" "}
       {title && <AH2 text={title} />}
       <div
