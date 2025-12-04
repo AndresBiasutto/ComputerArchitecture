@@ -1,4 +1,4 @@
-import ramDraw from "../../../assets/ramDraw.svg";
+import {ramDraw} from "../../../assets/ImageLinks";
 const RamDraw = () => {
   return (
     <div className="w-full h-full flex items-center justify-center">

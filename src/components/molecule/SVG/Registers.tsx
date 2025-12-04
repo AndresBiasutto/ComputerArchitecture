@@ -1,4 +1,4 @@
-import registers from "../../../assets/registers.svg";
+import {registers} from "../../../assets/ImageLinks";
 const Registers = () => {
   return (
     <div className="w-full h-full">

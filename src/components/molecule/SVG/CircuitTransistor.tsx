@@ -1,9 +1,9 @@
-import chipsAndIntegratedCircuit from "../../../assets/chipsAndIntegratedCircuit.svg"
+import {chipsetAndIntegratedCircuit} from "../../../assets/ImageLinks"
 
 const CircuitTransistor = () => {
   return (
     <div className="w-full h-full">
-      <img className="w-full" src={chipsAndIntegratedCircuit} alt="" />
+      <img className="w-full" src={chipsetAndIntegratedCircuit} alt="" />
     </div>
   );
 };

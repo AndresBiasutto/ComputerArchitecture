@@ -1,4 +1,4 @@
-import memHierarchy from "../../../assets/memHierarchy.svg";
+import {memHierarchy} from "../../../assets/ImageLinks";
 
 const MemHierarchy = () => {
   return (

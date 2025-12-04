@@ -1,8 +1,8 @@
-import principalPCComponents from "../../../assets/PrincipalPCComponents.svg";
+import {principalComponents} from "../../../assets/ImageLinks";
 const PrincipalPCComponents = () => {
   return (
     <div className="w-full h-full">
-      <img className="w-full" src={principalPCComponents} alt="" />
+      <img className="w-full" src={principalComponents} alt="" />
     </div>
   );
 };

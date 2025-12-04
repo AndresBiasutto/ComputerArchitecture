@@ -1,4 +1,4 @@
-import asciiTable from "../../../assets/ascii_table.svg";
+import {asciiTable} from "../../../assets/ImageLinks";
 const AsciiTable = () => {
   return (
     <div className="w-full h-full">

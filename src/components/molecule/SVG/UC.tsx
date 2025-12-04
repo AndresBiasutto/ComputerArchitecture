@@ -1,4 +1,4 @@
-import uc from "../../../assets/uc.svg";
+import {uc} from "../../../assets/ImageLinks";
 const UC = () => {
   return (
     <div className="w-full h-full">

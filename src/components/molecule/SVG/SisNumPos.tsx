@@ -1,4 +1,4 @@
-import sisNumPos from "../../../assets/sisNumPos.svg";
+import {sisNumPos} from "../../../assets/ImageLinks";
 const SisNumPos = () => {
   return (
     <div className="w-full h-full">

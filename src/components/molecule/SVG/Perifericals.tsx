@@ -1,4 +1,4 @@
-import perifericals from "../../../assets/Perifericals.svg";
+import {perifericals} from "../../../assets/ImageLinks";
 const Perifericals = () => {
   return (
     <div className="w-full h-full">

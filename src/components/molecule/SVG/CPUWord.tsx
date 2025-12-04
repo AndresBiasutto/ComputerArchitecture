@@ -1,4 +1,4 @@
-import cpuWord from "../../../assets/cpuWord.svg"
+import {cpuWord} from "../../../assets/ImageLinks"
 
 const CPUWord = () => {
   return (

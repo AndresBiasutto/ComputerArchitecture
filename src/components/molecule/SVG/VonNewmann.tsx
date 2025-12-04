@@ -1,4 +1,4 @@
-import vonNewmann from "../../../assets/vonNewmann.svg";
+import {vonNewmann} from "../../../assets/ImageLinks";
 const VonNewmann = () => {
   return (
     <div className="w-full h-full">

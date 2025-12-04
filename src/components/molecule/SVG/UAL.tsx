@@ -1,4 +1,4 @@
-import ual from "../../../assets/ual.svg";
+import {ual} from "../../../assets/ImageLinks";
 const UAL = () => {
   return (
     <div className="w-full h-full">

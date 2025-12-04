@@ -1,4 +1,4 @@
-import memSize from "../../../assets/memSize.svg"
+import {memSize} from "../../../assets/ImageLinks"
 
 const MemSize = () => {
   return (

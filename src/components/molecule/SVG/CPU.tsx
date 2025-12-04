@@ -1,4 +1,4 @@
-import cpu from "../../../assets/cpu.svg";
+import {cpu} from "../../../assets/ImageLinks";
 const Cpu = () => {
   return (
     <div className="w-full h-full">

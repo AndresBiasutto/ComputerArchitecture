@@ -1,9 +1,9 @@
-import logicCircuit from "../../../assets/logicCircuit.svg"
+import {locicCircuit} from "../../../assets/ImageLinks"
 
 const LogicCircuit = () => {
   return (
     <div className="w-full h-full">
-      <img className="w-full" src={logicCircuit} alt="" />
+      <img className="w-full" src={locicCircuit} alt="" />
     </div>
   );
 };

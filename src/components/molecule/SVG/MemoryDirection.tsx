@@ -1,4 +1,4 @@
-import memoryDirection from "../../../assets/memoryDirecction.svg"
+import {memoryDirection} from "../../../assets/ImageLinks"
 
 const MemoryDirection = () => {
   return (
